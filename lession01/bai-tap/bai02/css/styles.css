@@ -1,0 +1,26 @@
+#container{
+	width: 300px;
+	height: 347px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#box1{
+	float: left;
+	width: 100px;
+	height: 344px;
+	font-size: 30px;
+	color: #b78713;
+}
+
+#box2{
+	width: 150px;
+	height: 168px;
+	font-size: 30px;
+	text-align: center;
+	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
