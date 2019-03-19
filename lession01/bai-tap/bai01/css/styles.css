@@ -1,0 +1,19 @@
+#container{
+	width: 1000px;
+	height: 200px;
+}
+
+.myDiv{
+	width: 24%;
+	height: 100%;
+	float: left;
+}
+
+.box1, .box2{
+	width: 85px;
+	height: 175px;
+}
+
+.box2{
+	text-align: right;
+}
