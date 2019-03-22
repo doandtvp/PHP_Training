@@ -3,70 +3,69 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PHP Training - bai 01</title>
-	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 <body>
-	<div id="container">
-		<div class="myDiv">
-			<span>a.</span>
-			<div class="box1">
-				<?php
-					$stars = array("*", "**", "***", "****", "*****", "******", "*******", 
-						"********", "*********", "**********");
-					$clength = count($stars);
-					rsort($stars);
-					for ($i = 0; $i < $clength ; $i++) { 
-						echo $stars[$i];
-				    	echo "<br>";
-					}
-				?>
-			</div>
-		</div>
-		<div class="myDiv">
-			<span>b.</span>
-			<div class="box1">
-				<?php
-					$stars = array("*", "**", "***", "****", "*****", "******", "*******", 
-						"********", "*********", "**********");
-					$clength = count($stars);
-					sort($stars);
-					for ($i = 0; $i < $clength ; $i++) { 
-						echo $stars[$i];
-				    	echo "<br>";
-					}
-				?>
-			</div>
-		</div>
-		<div class="myDiv">
-			<span>c.</span>
-			<div class="box2">
-				<?php
-					$stars = array("*", "**", "***", "****", "*****", "******", "*******", 
-						"********", "*********", "**********");
-					$clength = count($stars);
-					sort($stars);
-					for ($i = 0; $i < $clength ; $i++) { 
-						echo $stars[$i];
-			    		echo "<br>";
-					}
-				?>
-			</div>
-		</div>
-		<div class="myDiv">
-			<span>d.</span>
-			<div class="box2">
-				<?php
-					$stars = array("*", "**", "***", "****", "*****", "******", "*******", 
-						"********", "*********", "**********");
-					$clength = count($stars);
-					rsort($stars);
-					for ($i = 0; $i < $clength ; $i++) { 
-						echo $stars[$i];
-			    		echo "<br>";
-					}
-				?>
-			</div>
-		</div>
-	</div>
+	<?php
+		//cau a
+		echo "a.";
+		echo "<br>";
+		for ($i = 10; $i >= 0; $i--) { 
+			for ($j = 0; $j < $i; $j++) { 
+				echo " * ";
+			}
+			echo "<br>";
+		}
+		// cau b
+		echo "b.";
+		echo "<br>";
+		for ($i = 0; $i <= 10; $i++) { 
+			for ($j = 0; $j < $i; $j++) { 
+				echo " * ";
+			}
+			echo "<br>";
+		}
+		// cau c
+		echo "c.";
+		echo "<br>";
+		for ($i = 10; $i >= 0; $i--) { 
+			for ($j = 0; $j < 10; $j++) { 
+				if ($j < $i) {
+					echo "&nbsp &nbsp";
+				} else {
+					echo "* ";
+				}
+			}
+			echo "<br>";
+		}
+		// cau d
+		echo "<br>";
+		echo "d.";
+		echo "<br>";
+		for ($i = 0; $i <= 10; $i++) { 
+			for ($j = 0; $j < 10 ; $j++) { 
+				if ($j < $i) {
+					echo "&nbsp &nbsp";
+				} else {
+					echo "* ";
+				}
+			}
+			echo "<br>";
+		}
+		//cau e
+		echo "e.";
+		echo "<br>";
+		for ($i = 0; $i <= 5; $i++) { 
+			for ($j = 0; $j < $i; $j++) { 
+				echo " * ";
+			}
+			echo "<br>";
+		}
+		for ($i = 5; $i >= 0; $i--) { 
+			for ($j = 0; $j < $i; $j++) { 
+				echo " * ";
+			}
+			echo "<br>";
+		}
+	?>
 </body>
 </html>
