@@ -66,6 +66,20 @@
 			}
 			echo "<br>";
 		}
+		//cau f
+		echo "<br>";
+		echo "f.";
+		echo "<br>";
+		for ($i = 5; $i > 0 ; $i--) { 
+			for ($j = 0; $j <= (10 - $i); $j++) { 
+				if ($j >= $i) {
+					echo "* ";
+				} else {
+					echo "&nbsp &nbsp";
+				}
+			}
+			echo "<br>";
+		}
 	?>
 </body>
 </html>
